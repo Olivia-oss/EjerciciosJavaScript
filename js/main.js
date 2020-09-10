@@ -3,6 +3,7 @@ import {Funciones5_8} from "./funciones5_8.js";
 import {Funciones9_11} from "./funciones9_11.js";
 import {Funciones12_14} from "./funciones12_14.js";
 import {Funciones15_17} from "./funciones15_17.js";
+import {Funciones18_20} from "./funciones18_20.js";
 
 let text = "Hola como estas?";
 const p = 'The quick brown fox jumps over the lazy dog. If the dog reacted, was it really lazy?';
@@ -12,6 +13,7 @@ let fuctions5_8 = new Funciones5_8();
 let fuctions9_11 = new Funciones9_11();
 let fuctions12_14 = new Funciones12_14();
 let fuctions15_17 = new Funciones15_17();
+let fuctions18_20 = new Funciones18_20();
 
 
 console.log("Ejercicios 1/4");
@@ -30,7 +32,7 @@ console.log("Ejercicios 9/11");
 fuctions9_11.numeroRandom500_600();
 fuctions9_11.nuemeroCapicua(2002);
 fuctions9_11.factorial(5);
-console.log();
+console.log("   ");
 console.log("Ejercicios 12/14");
 fuctions12_14.numeroPrimo(10);
 fuctions12_14.parImpar(11);
@@ -40,3 +42,8 @@ console.log("Ejercicios 15/17");
 fuctions15_17.decimalABinarioViseversa(1010,2);
 fuctions15_17.descuento(100,20);
 fuctions15_17.fechaanios(new Date(1984,9,23));
+console.log("    ");
+console.log("Ejercicios 18/20");
+fuctions18_20.vacalesConstantes("HolA mundo");
+fuctions18_20.validarNombre("oly")
+fuctions18_20.validarEmail("olt32@gmail.com");
