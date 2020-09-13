@@ -32,9 +32,14 @@ export class Funciones18_20{
         if(!email){
             console.warn("Ingresa un texto")
         }else{
-            let patron = /^[A-Za-z._\d]+(@gmail.com)$/;
+            let patron = /^[A-Za-z._\d]+(@)[A-Za-z]{1,10}[.][A-Za-z]{2,3}[.]{0,1}[A-Za-z]{0,3}$/;
             if(patron.test(email)){
-                console.log(`El nombre ${email} es correcto`);
+                if(email.charAt(email.length-1) !== "."){
+                    console.log(`El nombre ${email} es correcto`);
+                }else{
+                    console.log(`El nombre ${email} no es correcto`);
+                }
+                
             }else{
                 console.log(`El nombre ${email} no es correcto`);
             }
